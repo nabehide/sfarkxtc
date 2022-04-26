@@ -12,4 +12,5 @@ clean:
 	-rm sfarkxtc 2>/dev/null || true
 
 install: sfarkxtc
-	$(INSTALL) -D sfarkxtc $(DESTDIR)/usr/local/bin/sfarkxtc
+	$(INSTALL) -d $(DESTDIR)/usr/local/bin/sfarkxtc
+	$(INSTALL) sfarkxtc $(DESTDIR)/usr/local/bin/sfarkxtc
